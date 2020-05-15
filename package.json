@@ -1,0 +1,23 @@
+{
+  "name": "fake-api",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Fake API to test proxies",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "proxy",
+    "fake",
+    "api"
+  ],
+  "author": "Stefan Klinkusch",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
