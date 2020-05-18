@@ -13,7 +13,7 @@ exports.postData = (req, res) => {
 }
 
 exports.putData = (req, res) => {
-  const { headers, data } = req
+  const { headers, body } = req
   res
     .status(200)
     .json({ data: { headers, body, message: "The PUT request is working" } })
