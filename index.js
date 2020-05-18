@@ -1,6 +1,6 @@
-const express = require("express");
-const app = express();
-const port = 3000;
+const express = require("express")
+const app = express()
+const port = 3000
 const {
   getData,
   postData,
@@ -8,13 +8,13 @@ const {
   patchData,
   deleteData,
   wrongRoute,
-} = require("./methods");
+} = require("./methods")
 
-app.get("/get", (req, res) => getData(req, res));
-app.post("/post", (req, res) => postData(req, res));
-app.put("/put", (req, res) => putData(req, res));
-app.patch("/patch", (req, res) => patchData(req, res));
-app.delete("/delete", (req, res) => deleteData(req, res));
-app.all("*", (req, res) => wrongRoute(req, res));
+app.get("/get", (req, res) => getData(req, res))
+app.post("/post", (req, res) => postData(req, res))
+app.put("/put", (req, res) => putData(req, res))
+app.patch("/patch", (req, res) => patchData(req, res))
+app.delete("/delete", (req, res) => deleteData(req, res))
+app.all("*", (req, res) => wrongRoute(req, res))
 
-app.listen(port);
+app.listen(port)
