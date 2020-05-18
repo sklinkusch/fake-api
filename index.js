@@ -9,7 +9,9 @@ const {
   deleteData,
   wrongRoute,
 } = require("./methods")
+const { getBody } = require("./middleware")
 
+app.use("*", (req, res, next) => getBody(req, res, next))
 app.get("/get", (req, res) => getData(req, res))
 app.post("/post", (req, res) => postData(req, res))
 app.put("/put", (req, res) => putData(req, res))

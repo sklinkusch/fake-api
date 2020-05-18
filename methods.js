@@ -3,24 +3,24 @@ exports.getData = (req, res) => {
 }
 
 exports.postData = (req, res) => {
-  const { headers, data } = req
+  const { headers, body } = req
   res
     .status(200)
-    .json({ data: { headers, data, message: "The POST request is working" } })
+    .json({ data: { headers, body, message: "The POST request is working" } })
 }
 
 exports.putData = (req, res) => {
   const { headers, data } = req
   res
     .status(200)
-    .json({ data: { headers, data, message: "The PUT request is working" } })
+    .json({ data: { headers, body, message: "The PUT request is working" } })
 }
 
 exports.patchData = (req, res) => {
-  const { headers, data } = req
+  const { headers, body } = req
   res
     .status(200)
-    .json({ data: { headers, data, message: "The PATCH request is working" } })
+    .json({ data: { headers, body, message: "The PATCH request is working" } })
 }
 
 exports.deleteData = (req, res) => {
