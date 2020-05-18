@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "fake-api",
+  "alias": "fake-api.sklinkusch.now.sh",
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node"
+    }
+  ]
+}
