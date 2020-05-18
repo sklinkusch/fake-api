@@ -1,8 +1,8 @@
 exports.getData = (req, res) => {
-  const { headers } = req
+  const { headers, body } = req
   res
     .status(200)
-    .json({ headers, data: { message: "The GET request is working" } })
+    .json({ data: { headers, message: "The GET request is working" } })
 }
 
 exports.postData = (req, res) => {
@@ -27,10 +27,10 @@ exports.patchData = (req, res) => {
 }
 
 exports.deleteData = (req, res) => {
-  const { headers } = req
+  const { headers, body } = req
   res
     .status(200)
-    .json({ headers, data: { message: "The DELETE request is working" } })
+    .json({ data: { headers, message: "The DELETE request is working" } })
 }
 
 exports.wrongRoute = (req, res) => {
